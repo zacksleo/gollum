@@ -1,0 +1,4 @@
+build-image:
+    stage: build
+    image: zacksleo/docker-compose
+    script: docker-compose up -d
