@@ -7,10 +7,10 @@ services:
            - "80"
        volumes:
            - ./wiki/:/wiki
+           - ./nginx/oauth2_proxy.cfg:/etc/oauth2_proxy.cfg
    nginx:
         build: ./nginx
         ports:
-            - "80:80"
             - "443:443"
         links:
             - gollum
