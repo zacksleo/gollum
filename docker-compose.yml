@@ -7,8 +7,9 @@ services:
            - "80"
        volumes:
            - ./wiki/:/wiki
-           - ./nginx/oauth2_proxy.cfg:/etc/oauth2_proxy.cfg
+          #- ./nginx/oauth2_proxy.cfg:/etc/oauth2_proxy.cfg
    nginx:
+        container_name: gollum
         build: ./nginx
         ports:
             - "443:443"

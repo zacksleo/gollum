@@ -1,3 +1,4 @@
 !.gitignore
 /wiki
 .idea
+nginx/oauth2_proxy
